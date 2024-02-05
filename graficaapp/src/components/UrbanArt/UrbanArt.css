@@ -1,0 +1,12 @@
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.min-h-70vh {
+  min-height: 70vh !important;
+}

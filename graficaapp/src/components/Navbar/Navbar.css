@@ -1,0 +1,56 @@
+.text-xs {
+  font-size: 0.3rem;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.top-75 {
+  top: 75%;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+/* Modificar el degradado para que el desvanecimiento sea más sutil y sólo hacia el final */
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 40%,
+    transparent 100%
+  ); /* 90% blanco y 10% transparente */
+  height: 15rem;
+  z-index: 10;
+  position: relative;
+}
+
+.w-50.rounded img {
+  position: absolute;
+  z-index: 20;
+}
+
+/* Asegurarse de que los enlaces tengan un color visible inicial */
+.navbar .link,
+.navbar .link a {
+  text-decoration: none;
+  color: black; /* Puede cambiar este valor al color que prefieras para los enlaces */
+  transition: color 0.3s;
+}
+
+.navbar-bg {
+  background-color: #f7ecdc;
+  height: 15rem;
+  z-index: 10;
+  position: relative;
+}
+
+.navbar .link a:hover {
+  color: rgb(255, 217, 0);
+}
+
+.container-full {
+  margin-top: -15rem;
+}

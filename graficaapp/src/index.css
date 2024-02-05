@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply block py-2 pl-3 pr-4 rounded md:p-0 px-2 text-lg hover:underline;
+}
+
+.title_section {
+  @apply text-brown text-5xl font-extrabold;
+  font-family: "GraficaPopular";
+}
+
+body {
+  background-color: #f7ecdc;
+}
+
+@font-face {
+  font-family: "GraficaPopular";
+  src: local("GraficaPopular"),
+    url("./assets/fonts/SignPainter HouseShowcard.ttf") format("truetype");
+  font-weight: 700;
+}
+
+.min-h-70vh {
+  min-height: 70vh;
+}
+
+.min-h-60vh {
+  min-height: 60vh;
+}
+
+.min-h-80vh {
+  min-height: 80vh;
+}
