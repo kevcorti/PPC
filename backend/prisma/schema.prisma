@@ -1,0 +1,65 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Roles {
+  id_rol Int     @id @default(autoincrement())
+  name   String  @unique
+  user   Users[]
+}
+
+model Users {
+  id_user   String      @id @default(uuid())
+  email     String      @unique
+  names     String      @unique
+  biography String
+  id_rol    Int
+  password  String      @default("_12@34@56@78!")
+  urbanarts UrbanArts[]
+  rol       Roles       @relation(fields: [id_rol], references: [id_rol])
+}
+
+model UrbanArts {
+  id_urbanart         Int               @id @default(autoincrement())
+  name                String            @unique @db.VarChar(100)
+  created_at          DateTime          @default(now())
+  description         String            @db.VarChar(500)
+  updatedAt           DateTime          @updatedAt
+  url_photo           String            @db.VarChar(500)
+  marker              Markers?
+  user                Users?            @relation(fields: [id_user], references: [id_user])
+  id_user             String?
+  city                City?             @relation(fields: [id_city], references: [id_city])
+  id_city             Int?
+  UrbanArtCategory    UrbanArtCategory? @relation(fields: [id_urbanartcategory], references: [id])
+  id_urbanartcategory Int?
+  address             String
+}
+
+model Markers {
+  id_marker   Int        @id @default(autoincrement())
+  latitude    Float
+  longitude   Float
+  id_urbanart Int        @unique
+  urbanart    UrbanArts? @relation(fields: [id_urbanart], references: [id_urbanart])
+}
+
+model City {
+  id_city   Int         @id @default(autoincrement())
+  name      String
+  urbanarts UrbanArts[]
+}
+
+model UrbanArtCategory {
+  id          Int         @id @default(autoincrement())
+  name        String
+  description String
+  url_photo   String
+  urbanarts   UrbanArts[]
+}
