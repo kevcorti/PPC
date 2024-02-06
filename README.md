@@ -21,8 +21,9 @@ Antes de realizar la instalacion del ckan, debemos de instalar el Docker, los de
 
 #Instalar CKAN
 Para la instalación del ckan vamos a clonar el repositorio:
-
-
+```sh
+git clone https://github.com/ckan/ckan.git
+```
 ## Variables de entorno
 
 Antes de ejecutar este proyecto, primero deberá agregar las siguientes variables de entorno a su archivo .env. Cabe recalcar que cada app tiene su propio archivo .env, por lo cual deberá llenar individualmente.
