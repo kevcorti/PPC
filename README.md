@@ -21,7 +21,7 @@ La presente aplicación gráfica popular requiere [Node.js](https://nodejs.org/)
 Antes de realizar la instalacion del ckan, debemos de instalar el Docker, los detalles los podemos encontrar en este link: [Docker Engine](https://docs.docker.com/engine/install/ubuntu/).
 
 #### Instalar CKAN
-1. Para la instalación del ckan se accede a los proyectos y se clona el repositorio:
+1. Para la instalación del ckan primero se clona el repositorio en el lugar que deseemos:
 ```sh
 git clone https://github.com/ckan/ckan-docker
 ```
@@ -29,6 +29,18 @@ git clone https://github.com/ckan/ckan-docker
 ```sh
 cd (Directorio donde esta el ckan)/ckan-docker
 cp -pr .env.example .env
+```
+3. Construir las imagenes necesarias para los servicios.
+```sh
+sudo docker compose build
+```
+4. Para inicializar los servicios creados usa.
+```sh
+sudo docker compose up
+```
+5. Para eliminar y detener los servicios creado se usa.
+```sh
+sudo docker compose down
 ```
 
 ## Variables de entorno
