@@ -10,6 +10,7 @@
 - TailwindCss v3+
 - Prisma ORM (LTS)
 - CKAN v2.10+
+- Docker Engine
 
 ## Instalación
 La presente aplicación gráfica popular requiere [Node.js](https://nodejs.org/) v18+ para ejecutarlo. Además, necesita tener instalado [CKAN](https://ckan.org/) 2.10+ para el servidor de almacenamiento. Finalmente, para la base de datos [PostgreSQL](https://www.postgresql.org/) v14+ para almacenar los datos.
