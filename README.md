@@ -20,11 +20,17 @@ La presente aplicación gráfica popular requiere [Node.js](https://nodejs.org/)
 
 Antes de realizar la instalacion del ckan, debemos de instalar el Docker, los detalles los podemos encontrar en este link: [Docker Engine](https://docs.docker.com/engine/install/ubuntu/).
 
-# Instalar CKAN
-Para la instalación del ckan se accede a los proyectos y se clona el repositorio:
+#### Instalar CKAN
+1. Para la instalación del ckan se accede a los proyectos y se clona el repositorio:
 ```sh
-git clone https://github.com/ckan/ckan.git
+git clone https://github.com/ckan/ckan-docker
 ```
+2. Accedemos al lugar en donde instalamos el ckan y luego copiamos lo del archivo `.env.example` en el archivo `.env`
+```sh
+cd (Directorio donde esta el ckan)/ckan-docker
+cp -pr .env.example .env
+```
+
 ## Variables de entorno
 
 Antes de ejecutar este proyecto, primero deberá agregar las siguientes variables de entorno a su archivo .env. Cabe recalcar que cada app tiene su propio archivo .env, por lo cual deberá llenar individualmente.
