@@ -18,7 +18,7 @@ La presente aplicación gráfica popular requiere [Node.js](https://nodejs.org/)
 ### Instalación CKAN usando Docker Compose
 
 Mira este video o link para instalar CKAN.
-[Link]([https://docs.ckan.org/en/2.9/maintaining/installing/install-from-package.html](https://docs.ckan.org/en/2.9/maintaining/installing/install-from-docker-compose.html))
+[Link](https://docs.ckan.org/en/2.9/maintaining/installing/install-from-package.html](https://docs.ckan.org/en/2.9/maintaining/installing/install-from-docker-compose.html)
 
 ## Variables de entorno
 
