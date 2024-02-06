@@ -14,10 +14,11 @@
 ## Instalación
 La presente aplicación gráfica popular requiere [Node.js](https://nodejs.org/) v18+ para ejecutarlo. Además, necesita tener instalado [CKAN](https://ckan.org/) 2.10+ para el servidor de almacenamiento. Finalmente, para la base de datos [PostgreSQL](https://www.postgresql.org/) v14+ para almacenar los datos.
 
-### Instalación CKAN
+
+### Instalación CKAN usando Docker Compose
 
 Mira este video o link para instalar CKAN.
-[Link](https://docs.ckan.org/en/2.9/maintaining/installing/install-from-package.html)
+[Link]([https://docs.ckan.org/en/2.9/maintaining/installing/install-from-package.html](https://docs.ckan.org/en/2.9/maintaining/installing/install-from-docker-compose.html))
 
 ## Variables de entorno
 
